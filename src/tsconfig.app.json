@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "outDir": "../out-tsc/app",
+    "target": "es5",
+    "module": "es2015",
+    "baseUrl": "",
+    "types": [],
+    "paths": {
+      "@angular/*": [
+        "../node_modules/@angular/*"
+      ],
+      "ag-grid-community": [
+        "../node_modules/ag-grid-community"
+      ],
+      "ag-grid-community/*": [
+        "../node_modules/ag-grid-community/*"
+      ],
+      "ag-grid-angular": [
+        "../node_modules/ag-grid-angular"
+      ],
+      "ag-grid-angular/*": [
+        "../node_modules/ag-grid-angular/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableIvy": false
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
