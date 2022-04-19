@@ -1,6 +1,6 @@
 {
   "name": "ag-grid-angular-cli-package-example",
-  "version": "27.1.0",
+  "version": "27.2.0",
   "description": "AG Grid Angular Example Using Angular CLI",
   "license": "MIT",
   "repository": {
@@ -11,7 +11,7 @@
   "angular-cli": {},
   "scripts": {
     "start": "ng serve --port 8080",
-    "build": "ng build --aot --prod && npm run hash",
+    "package": "ng build --aot --prod && npm run hash",
     "hash": "sh ./hashDirectory.sh > .hash",
     "lint": "tslint \"src/**/*.ts\"",
     "test:e2e": "ng test --watch false --browsers ChromeHeadless",
@@ -20,9 +20,9 @@
   },
   "private": true,
   "dependencies": {
-    "ag-grid-enterprise": "~27.1.0",
-    "ag-grid-community": "~27.1.0",
-    "ag-grid-angular": "~27.1.0",
+    "ag-grid-enterprise": "~27.2.0",
+    "ag-grid-community": "~27.2.0",
+    "ag-grid-angular": "~27.2.0",
     "bootstrap": "4.5.0",
     "@angular/animations": "11.2.14",
     "@angular/common": "11.2.14",
