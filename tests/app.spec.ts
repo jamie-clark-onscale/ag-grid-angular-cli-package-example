@@ -96,7 +96,7 @@ describe('angular-cli App', function () {
         TestBed.configureTestingModule({
             imports: [
                 FormsModule,
-                AgGridModule.withComponents([RendererComponent, EditorComponent])
+                AgGridModule
             ],
             declarations: [TestHostComponent, RendererComponent, EditorComponent]
         }).compileComponents();
