@@ -59,8 +59,6 @@ export class EditorComponent implements ICellEditorAngularComp {
 
                              [stopEditingWhenGridLosesFocus]="false"
 
-                             [frameworkComponents]="frameworkComponents"
-
                              (gridReady)="onGridReady($event)">
             </ag-grid-angular>
         </div>`
@@ -70,14 +68,9 @@ class TestHostComponent {
 
     columnDefs: any[] = [
         {field: "name"},
-        {field: "number", colId: "raw", headerName: "Raw Number", editable: true, cellEditor: 'editor'},
-        {field: "number", colId: "renderer", headerName: "Renderer Value", cellRenderer: 'renderer'}
+        {field: "number", colId: "raw", headerName: "Raw Number", editable: true, cellEditor: EditorComponent},
+        {field: "number", colId: "renderer", headerName: "Renderer Value", cellRenderer: RendererComponent}
     ];
-
-    frameworkComponents = {
-        'renderer': RendererComponent,
-        'editor': EditorComponent
-    };
 
     api: GridApi;
     columnApi: ColumnApi;
