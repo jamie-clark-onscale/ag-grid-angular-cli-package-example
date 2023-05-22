@@ -14,7 +14,7 @@
     "package": "NODE_OPTIONS=--openssl-legacy-provider ng build --aot --configuration production && npm run hash",
     "hash": "sh ./hashDirectory.sh > .hash",
     "lint": "tslint \"src/**/*.ts\"",
-    "test:e2e": "ng test --watch false --browsers ChromeHeadless",
+    "test:e2e": "NODE_OPTIONS=--openssl-legacy-provider ng test --watch false --browsers ChromeHeadless",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor"
   },
