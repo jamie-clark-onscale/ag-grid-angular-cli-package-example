@@ -10,7 +10,7 @@
   "author": "Sean Landsman <sean@thelandsmans.com>",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve --port 8080",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider ng serve --port 8080",
     "package": "NODE_OPTIONS=--openssl-legacy-provider ng build --aot --configuration production && npm run hash",
     "hash": "sh ./hashDirectory.sh > .hash",
     "lint": "tslint \"src/**/*.ts\"",
