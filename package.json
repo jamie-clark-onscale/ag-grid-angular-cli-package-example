@@ -1,6 +1,6 @@
 {
   "name": "ag-grid-angular-cli-package-example",
-  "version": "29.2.0",
+  "version": "30.0.0",
   "description": "AG Grid Angular Example Using Angular CLI",
   "license": "MIT",
   "repository": {
@@ -10,19 +10,19 @@
   "author": "Sean Landsman <sean@thelandsmans.com>",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve --port 8080",
-    "package": "ng build --aot --configuration production && npm run hash",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider ng serve --port 8080",
+    "package": "NODE_OPTIONS=--openssl-legacy-provider ng build --aot --configuration production && npm run hash",
     "hash": "sh ./hashDirectory.sh > .hash",
     "lint": "tslint \"src/**/*.ts\"",
-    "test:e2e": "ng test --watch false --browsers ChromeHeadless",
+    "test:e2e": "NODE_OPTIONS=--openssl-legacy-provider ng test --watch false --browsers ChromeHeadless",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor"
   },
   "private": true,
   "dependencies": {
-    "ag-grid-enterprise": "~29.2.0",
-    "ag-grid-community": "~29.2.0",
-    "ag-grid-angular": "~29.2.0",
+    "ag-grid-enterprise": "~30.0.0",
+    "ag-grid-community": "~30.0.0",
+    "ag-grid-angular": "~30.0.0",
     "@angular/animations": "12.2.16",
     "@angular/common": "12.2.16",
     "@angular/compiler": "12.2.16",
